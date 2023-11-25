@@ -1,0 +1,65 @@
+what is node js?
+node js hai khoob saara c++ ka code jo ki liya gya hai chrome browser ke v8 engine se aur is c++ code jsiko liya gya hai usey wrap kar diya gaya JS code se and ye hume allow karta hai ke hum js code likhein aur ye js code accept karega and C++ ke basis par aapko ek server environment bana kar dega, par tab tak jab tak ye code chalega jab tak aapka node(V8 engine and js wrapper ) chalu hai 
+
+what is v8 engine
+In the context of Google Chrome, "V8" refers to the open-source JavaScript engine developed by The Chromium Project for the Chrome browser. The V8 engine is also used in other Chromium-based browsers like Microsoft Edge.
+
+The V8 engine is responsible for executing JavaScript code in the browser. It's designed to be fast and efficient, utilizing various optimization techniques to improve the performance of JavaScript execution. The development of V8 is ongoing, with regular updates and improvements being made to enhance its speed and overall capabilities.
+
+The V8 engine is a critical component of the Chrome browser, enabling it to handle complex web applications and deliver a responsive user experience. As web technologies have advanced, the performance of JavaScript engines like V8 has become increasingly important for the overall speed and responsiveness of web browsers.
+
+CONTENT
+-- node js install               ---->  https://nodejs.org/en/
+
+-- import and export 
+    example: we have two js file 
+             first one is app.js in which the code is given below 
+             const data = require('./app2');
+             console.log(data.first);
+
+             and other is app2.js in which code is given below 
+             let a = 45;
+             let b = 95;
+             module.export = {
+             first: a,
+             second: b,
+            };
+
+-- run the code
+            run this line in your terminal node .\app.js
+-- nodejs core usage & understanding -- http
+-- npm usage
+            The concept of npm in the Node.js ecosystem is similar to the concept of an app store or marketplace for mobile applications, such as the Google Play Store for Android                   devices or the Apple App Store for iOS devices. Let's draw a parallel to illustrate the similarities:
+
+            1. **Package/ App Repository:**
+             - **npm:** It is a repository of Node.js packages, where developers can publish, share, and find reusable JavaScript code and libraries. npm hosts a vast collection of                     packages that cover a wide range of functionalities.
+             - **Play Store:** It is a marketplace where Android developers publish their mobile applications. Users can explore and download apps from the Play Store.
+
+            2. **Package/ App Installation:**
+             - **npm:** Developers use the `npm install` command to download and install packages from the npm registry into their Node.js projects. This command also installs                          dependencies specified in the `package.json` file.
+             - **Play Store:** Users use the Play Store app on their Android devices to search for, download, and install applications on their smartphones or tablets.
+
+            3. **Dependency Management:**
+             - **npm:** npm automatically manages dependencies, ensuring that the correct versions of libraries are installed based on the information provided in the `package.json`                    file.
+             - **Play Store:** When users install an app from the Play Store, the necessary dependencies and resources are managed automatically by the store.
+
+            4. **Version Control:**
+             - **npm:** Developers can specify version numbers or version ranges in the `package.json` file to control which versions of dependencies their project should use.
+             - **Play Store:** App developers specify the minimum and target versions of Android in their app manifest to ensure compatibility.
+
+            5. **Publishing:**
+             - **npm:** Developers can publish their own packages to the npm registry so that others can discover and use their code.
+             - **Play Store:** Android developers can publish their apps on the Play Store, making them available to a global audience of Android users.
+
+            6. **Centralized Repository:**
+             - **npm:** npm provides a central repository where developers can find and share packages.
+             - **Play Store:** The Play Store serves as a central repository for Android apps, providing a platform for distribution and discovery.
+
+            While npm and the Play Store serve different ecosystems (server-side JavaScript for npm and mobile applications for the Play Store), they both play a crucial role in                     simplifying the process of discovering, sharing, and managing software components or applications within their respective domains.
+
+***********************************    Here are some common npm commands:   ************************************************************
+            npm install: Installs dependencies listed in the package.json file.
+            npm install <package-name>: Installs a specific package.
+            npm install -g <package-name>: Installs a package globally, making it accessible as a command-line tool.
+            npm init: Initializes a new package.json file, which contains metadata about the project and its dependencies.
+            npm publish: Publishes a package to the npm registry.
