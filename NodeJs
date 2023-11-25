@@ -63,3 +63,5 @@ CONTENT
             npm install -g <package-name>: Installs a package globally, making it accessible as a command-line tool.
             npm init: Initializes a new package.json file, which contains metadata about the project and its dependencies.
             npm publish: Publishes a package to the npm registry.
+-- express 
+            Express is a web application framework for Node.js, designed to simplify the process of building robust and scalable web applications and APIs. It is one of the most popular             and widely used frameworks in the Node.js ecosystem. 
