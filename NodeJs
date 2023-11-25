@@ -1,3 +1,21 @@
+Summary of CONTENT
+--    node installation
+--    import and export in js
+--    run and code
+--    node js core usage & understanding -http
+--    npm usage
+--    express
+--    express generator 
+--    mongodb
+--    intermediate mongodb
+--    api development 
+--    authentication and authorization 
+--    error handling
+--    middleware 
+
+--    session and cookies
+
+
 what is node js?
 node js hai khoob saara c++ ka code jo ki liya gya hai chrome browser ke v8 engine se aur is c++ code jsiko liya gya hai usey wrap kar diya gaya JS code se and ye hume allow karta hai ke hum js code likhein aur ye js code accept karega and C++ ke basis par aapko ek server environment bana kar dega, par tab tak jab tak ye code chalega jab tak aapka node(V8 engine and js wrapper ) chalu hai 
 
@@ -65,3 +83,28 @@ CONTENT
             npm publish: Publishes a package to the npm registry.
 -- express 
             Express is a web application framework for Node.js, designed to simplify the process of building robust and scalable web applications and APIs. It is one of the most popular             and widely used frameworks in the Node.js ecosystem. 
+
+-- middleware
+
+ 		 middleware -- yeh ek aaisha function joh kishe bhi route se pahile 			chalta hai, jiska matlab aapko route chalne se pahle agr app koi kaam 			karana chate ho toh middleare ka use  kiya  ja skta hai  
+
+      example 
+   	  let express = require('express');
+	  const { nextTick } = require('process');
+	  let app = express();
+
+	  app.use((req,res,next)=>{
+  	  console.log('First Middleware');
+  	  next();
+	  })
+
+		from line 21 to 24 is the middleware code in that code we use next() 			function because sirf ek problem hai agar humara middleware chaltgya toh 		request jaam ho jati hai aur route tak nhi pauch pate so yeh problem na 		ho islea hum next() use karte hai
+
+		app.get('/',(req,res)=>{
+		res.send('Hello Idna!')
+		})
+
+		app.get('/profile',(req,res)=>{
+		res.send('Profile Page')
+		})
+		app.listen(3000)
